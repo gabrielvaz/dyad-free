@@ -98,7 +98,7 @@ const HubPage: React.FC = () => {
                         }
                       }}
                     >
-                      View on GitHub{" "}
+                      View Source{" "}
                       <ArrowLeft className="w-4 h-4 ml-1 transform rotate-180" />
                     </a>
                   )}
