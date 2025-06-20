@@ -248,13 +248,12 @@ Session ID: ${sessionId}
               <span>{sessionId}</span>
             </div>
             <p className="text-center text-sm">
-              Please open a GitHub issue so we can follow-up with you on this
-              issue.
+              Please open an issue so we can follow up with you on this issue.
             </p>
           </div>
           <DialogFooter>
             <Button onClick={handleOpenGitHubIssue} className="w-full">
-              Open GitHub Issue
+              Open Issue
             </Button>
           </DialogFooter>
         </DialogContent>
