@@ -16,11 +16,7 @@ export function ChatErrorBox({
     return (
       <ChatErrorContainer onDismiss={onDismiss}>
         {error}
-        <span className="ml-1">
-          <ExternalLink href="https://dyad.sh/pro">
-            Access with Dyad Pro.
-          </ExternalLink>
-        </span>
+        <span className="ml-1">Learn about access options.</span>
       </ChatErrorContainer>
     );
   }
@@ -31,11 +27,7 @@ export function ChatErrorBox({
     return (
       <ChatErrorContainer onDismiss={onDismiss}>
         {error}
-        <span className="ml-1">
-          <ExternalLink href="https://dyad.sh/pro">
-            Upgrade to Dyad Pro.
-          </ExternalLink>
-        </span>
+        <span className="ml-1">Learn about upgrade options.</span>
       </ChatErrorContainer>
     );
   }
@@ -43,13 +35,7 @@ export function ChatErrorBox({
   if (error.includes("LiteLLM Virtual Key expected")) {
     return (
       <ChatInfoContainer onDismiss={onDismiss}>
-        <span>
-          Looks like you don't have a valid Dyad Pro key.{" "}
-          <ExternalLink href="https://dyad.sh/pro">
-            Upgrade to Dyad Pro
-          </ExternalLink>{" "}
-          today.
-        </span>
+        <span>Looks like your key is invalid. View subscription options today.</span>
       </ChatInfoContainer>
     );
   }

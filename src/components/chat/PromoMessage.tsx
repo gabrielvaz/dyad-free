@@ -56,8 +56,12 @@ export function Message({ spans }: MessageConfig) {
 export const TURBO_EDITS_PROMO_MESSAGE: MessageConfig = {
   spans: [
     { type: "text", content: "Tired of waiting on AI?" },
-    { type: "link", content: " Get Dyad Pro", url: "https://dyad.sh/pro#ai" },
-    { type: "text", content: " for faster edits with Turbo Edits." },
+    {
+      type: "text",
+      content: " Try our ",
+    },
+    { type: "link", content: "Turbo Edits", url: "https://dyad.sh/pro#ai" },
+    { type: "text", content: " feature for faster edits." },
   ],
 };
 
@@ -66,7 +70,7 @@ export const SMART_CONTEXT_PROMO_MESSAGE: MessageConfig = {
     { type: "text", content: "Save up to 5x on AI costs with " },
     {
       type: "link",
-      content: "Dyad Pro's Smart Context",
+      content: "Smart Context",
       url: "https://dyad.sh/pro#ai",
     },
   ],
@@ -82,19 +86,6 @@ export const DIFFERENT_MODEL_TIP: MessageConfig = {
   ],
 };
 
-export const REDDIT_TIP: MessageConfig = {
-  spans: [
-    {
-      type: "text",
-      content: "Join 600+ builders in the ",
-    },
-    {
-      type: "link",
-      content: "Dyad subreddit",
-      url: "https://www.reddit.com/r/dyadbuilders/",
-    },
-  ],
-};
 
 export const REPORT_A_BUG_TIP: MessageConfig = {
   spans: [
@@ -124,7 +115,7 @@ export const BUILD_A_BIBLE_APP_TIP: MessageConfig = {
     },
     {
       type: "text",
-      content: " the creator of Dyad build a Bible app step-by-step",
+      content: " a step-by-step guide to building a Bible app",
     },
   ],
 };
@@ -158,14 +149,6 @@ export const AI_RULES_TIP: MessageConfig = {
   ],
 };
 
-export const NEW_CHAT_TIP: MessageConfig = {
-  spans: [
-    {
-      type: "text",
-      content: "Want to keep the AI focused? Start a new chat.",
-    },
-  ],
-};
 
 // Want to know what's next? Checkout our roadmap https://www.dyad.sh/docs/roadmap
 export const ROADMAP_TIP: MessageConfig = {
@@ -182,34 +165,17 @@ export const ROADMAP_TIP: MessageConfig = {
   ],
 };
 
-// Like Dyad? Star it on GitHub https://github.com/dyad-sh/dyad/
-export const GITHUB_TIP: MessageConfig = {
-  spans: [
-    {
-      type: "text",
-      content: "Like Dyad? Star it on ",
-    },
-    {
-      type: "link",
-      content: "GitHub",
-      url: "https://github.com/dyad-sh/dyad",
-    },
-  ],
-};
 // Array of all available messages for rotation
 const ALL_MESSAGES = [
   TURBO_EDITS_PROMO_MESSAGE,
   SMART_CONTEXT_PROMO_MESSAGE,
   DIFFERENT_MODEL_TIP,
-  REDDIT_TIP,
   REPORT_A_BUG_TIP,
   UPLOAD_CHAT_TIP,
   BUILD_A_BIBLE_APP_TIP,
   DEBUGGING_TIPS_TIP,
   AI_RULES_TIP,
-  NEW_CHAT_TIP,
   ROADMAP_TIP,
-  GITHUB_TIP,
 ];
 
 // Main PromoMessage component using the modular system
